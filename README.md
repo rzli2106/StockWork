@@ -1,7 +1,7 @@
 # Quantitative Asset Correlation Network
 
 ## Overview
-This repository contains an interactive web application that visualizes the network
+StockWork an interactive web application that visualizes the network
 topology of financial assets. It downloads real market data, computes a correlation
 matrix of daily returns, and renders a graph where nodes are equities and edges
 represent statistically significant correlation between them (blue = move together,
