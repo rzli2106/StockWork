@@ -2,7 +2,7 @@
 
 Downloads recent price history for a set of tickers, builds a graph where an
 edge connects two stocks whose daily returns are correlated above a
-threshold, and calls the Claude API to generate a short, plain-English
+threshold, and calls the claude API to generate a short, plain-English
 "what's driving this stock" for each ticker so the network is easier
 to read.
 """
@@ -21,7 +21,7 @@ load_dotenv()
 st.set_page_config(page_title="Stock Network Tracker", layout="wide")
 st.title("Stock Network Tracker")
 st.caption(
-    "Builds a correlation network from real price data, then uses Claude to "
+    "Builds a correlation network from real price data, then asks an claude to"
     "explain what's likely driving each stock."
 )
 
@@ -184,9 +184,9 @@ if not client_available:
 else:
     if st.button("Generate AI context for these tickers"):
         for ticker in available_tickers:
-            with st.expander(f"🤖 {ticker}", expanded=False):
+            with st.expander(f" {ticker}", expanded=False):
                 try:
-                    with st.spinner(f"Asking Claude about {ticker}..."):
+                    with st.spinner(f"Synthesizing AI context for {ticker}..."):
                         st.write(get_ai_stock_context(ticker))
                 except Exception as exc:
                     st.error(f"Claude API call failed for {ticker}: {exc}")

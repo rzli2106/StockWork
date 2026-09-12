@@ -34,11 +34,4 @@ in the network, so the graph is readable even if you don't already know the name
 5. Launch the local web server:
    `streamlit run interactive_network.py`
 
-## Deploying to Streamlit Community Cloud
 
-Instead of a `.env` file, add the key under your app's **Settings → Secrets** as:
-```
-ANTHROPIC_API_KEY = "sk-ant-your-key-here"
-```
-The app checks Streamlit secrets first and falls back to the environment/`.env`, so
-the same code works locally and once deployed.
