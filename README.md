@@ -1,4 +1,4 @@
-# Quantitative Asset Correlation Network
+# StockWork: A Quantitative Asset Correlation Network
 
 ## Overview
 StockWork an interactive web application that visualizes the network
