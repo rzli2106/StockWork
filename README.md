@@ -35,3 +35,5 @@ in the network, so the graph is readable even if you don't already know the name
    `streamlit run interactive_network.py`
 
 
+## Streamlit
+https://tradingnetworkgenai-ffpwxvbjfvc4zfapvih5gy.streamlit.app/
