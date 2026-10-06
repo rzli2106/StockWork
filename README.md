@@ -40,4 +40,4 @@ stock. It is based on model knowledge rather than live news.
 
 ## Live app
 
-https://tradingnetworkgenai-ffpwxvbjfvc4zfapvih5gy.streamlit.app/
+https://stockwork-ibfna6kakk7mpsybxhtndb.streamlit.app/
