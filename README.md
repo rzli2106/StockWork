@@ -1,15 +1,18 @@
-# StockWork: A Quantitative Asset Correlation Network
+# Stockwork
+
+An interactive web app for exploring how stocks move together. Stockwork turns
+historical price data into a correlation network and can add concise AI-generated
+company context.
 
 ## Overview
-StockWork an interactive web application that visualizes the network
-topology of financial assets. It downloads real market data, computes a correlation
-matrix of daily returns, and renders a graph where nodes are equities and edges
-represent statistically significant correlation between them (blue = move together,
-red = move oppositely; thicker = stronger).
+Stockwork downloads historical prices, calculates correlations between daily
+returns, and draws a network where each node is an equity. Green connections
+show stocks that moved together; coral connections show stocks that moved in
+opposite directions. Wider connections indicate a stronger correlation.
 
-**Generative AI:** the app also calls the Claude API (Anthropic) to generate a short,
-plain-English "what is this company and what tends to move it" blurb for every ticker
-in the network, so the graph is readable even if you don't already know the names.
+The optional company context feature uses the Anthropic API to generate a short
+plain-English introduction to each company and common factors that can move its
+stock. It is based on model knowledge rather than live news.
 
 ## Installation & Usage
 
@@ -31,9 +34,10 @@ in the network, so the graph is readable even if you don't already know the name
    [console.anthropic.com/settings/keys](https://console.anthropic.com/settings/keys).
    Without a key the app still runs and shows the correlation network — it just skips
    the AI section.
-5. Launch the local web server:
-   `streamlit run interactive_network.py`
+5. Launch the local web app:
+   `streamlit run interactive_networkGenAI.py`
 
 
-## Streamlit
+## Live app
+
 https://tradingnetworkgenai-ffpwxvbjfvc4zfapvih5gy.streamlit.app/
